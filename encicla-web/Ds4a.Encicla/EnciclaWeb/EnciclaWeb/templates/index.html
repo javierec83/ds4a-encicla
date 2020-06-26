@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Encicla Insights</h1>
+    <p class="lead">
+        Encicla, the public bike-sharing system of the Aburra Valley, inaugurated in 2011, is a network of shared 
+        bicycle stations for the mobilization of people in the Metropolitan Area.
+    </p>
+    <p><a href="http://encicla.metropol.gov.co" target="_blank" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Business Problem</h2>
+        <p>
+            Giving insights about a dataset is the aim of each data science project, in this specific project route
+            optimization and demand predicting could help Encicla in:
+        </p>
+        <ul>
+            <li>Proper Planning and cost optimization routes for bicycles supply.</li>
+            <li>Customer/users Optimal offers according with available options.</li>
+            <li>Increasing the accuracy of pre-decided arrival time of bicycles to Encicla Stations.</li>
+            <li>Delivering more in less time and minor distance.</li>
+            <li>Improved customer assistance experience through visualization availability.</li>
+            <li>Accurate ETA showing planned routes and possible stoppages for bicycles supply.</li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h2>Data</h2>
+        <p>
+            The dataset consists of public information about mobility of Medellin:
+        </p>
+        <ul>
+            <li>
+                <a href="https://datosabiertos.metropol.gov.co/dataset/estaciones-encicla" target="_blank">
+                    Location of the Encicla public bike-sharing system stations
+                </a>
+            </li>
+            <li>
+                <a href="http://144.22.100.43/WebApiEstaciones/estaciones" target="_blank">
+                    Rest API Service with real time data about inventory of bike station
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <h2>Methods</h2>
+        <p>
+            One key component of understanding the patterns in Encicla's bicycle usage is providing
+            high-quality visualizations of his historical user's interactions with Encicla's system.
+            Here are some of the static and interactive visualizations we will provide:
+        </p>
+        <ul>
+            <li>
+                Encycla's bicycles usage over time (historical usage by weekdays-hours and week-days)
+            </li>
+            <li>
+                Inventory nominal value against real value (+ 1 static plot with interactions over stations)
+            </li>
+            <li>
+                Optimal Route supply visualization (+ 1 static plot with interactions over stations)
+            </li>
+            <li>
+                Performance metrics of each model vs reality (Back testing metrics)
+            </li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
