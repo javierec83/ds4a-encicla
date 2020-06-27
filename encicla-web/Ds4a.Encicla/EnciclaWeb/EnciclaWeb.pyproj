@@ -34,6 +34,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EnciclaWeb\" />
+    <Folder Include="EnciclaWeb\data\" />
     <Folder Include="EnciclaWeb\static\" />
     <Folder Include="EnciclaWeb\static\content\" />
     <Folder Include="EnciclaWeb\static\fonts\" />
@@ -41,6 +42,8 @@
     <Folder Include="EnciclaWeb\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EnciclaWeb\data\inventory.csv" />
+    <Content Include="EnciclaWeb\templates\plot-test.html" />
     <Content Include="requirements.txt" />
     <Content Include="EnciclaWeb\static\content\bootstrap.css" />
     <Content Include="EnciclaWeb\static\content\bootstrap.min.css" />

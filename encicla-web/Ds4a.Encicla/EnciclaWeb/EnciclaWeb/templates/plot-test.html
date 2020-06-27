@@ -1,0 +1,15 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6 table-responsive">
+        <h3 class="mb-3">Stations without bikes (head)</h3>
+        {{ inventories|safe }}
+    </div>
+    <div class="col-md-6">
+        <img src="data:image/png;base64, {{ plot_url }}" class="img-fluid" alt="Stations without bikes">
+    </div>
+</div>
+
+{% endblock %}
