@@ -19,16 +19,42 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a href="/" class="navbar-brand">
-                    <i class="glyphicon glyphicon-stats"></i>
+                    <i class="glyphicon glyphicon-dashboard"></i><i class="glyphicon glyphicon-dashboard"></i>
                     Encicla Insights
                 </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
-                    <li><a href="{{ url_for('plotTest') }}">Plot Tests</a></li>
+                    <li>
+                        <a href="{{ url_for('plotTest') }}" class="menu-link">
+                            <i class="glyphicon glyphicon-stats"></i>
+                            Exploratory Analysis
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('plotTest') }}" class="menu-link">
+                            <i class="glyphicon glyphicon-map-marker"></i>
+                            Locations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('plotTest') }}" class="menu-link">
+                            <i class="glyphicon glyphicon-ok-circle"></i>
+                            Findings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('about') }}" class="menu-link">
+                            <i class="glyphicon glyphicon-info-sign"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('contact') }}" class="menu-link">
+                            <i class="glyphicon glyphicon-bullhorn"></i>
+                            Contact
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

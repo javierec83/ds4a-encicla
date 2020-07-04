@@ -40,3 +40,13 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+
+.menu-link {
+    margin-top: 5px;
+}
+
+.main-banner {
+    background-image: url('/static/imgs/Logo-encicla.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
