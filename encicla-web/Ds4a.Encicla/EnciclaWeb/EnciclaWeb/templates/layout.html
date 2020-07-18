@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
+    {{ hdr_txt  }}
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{ url_for('plotTest') }}" class="menu-link">
+                        <a href="{{ url_for('mapTest') }}" class="menu-link">
                             <i class="glyphicon glyphicon-map-marker"></i>
                             Locations
                         </a>
@@ -72,6 +73,6 @@
     <script src="/static/scripts/bootstrap.js"></script>
     <script src="/static/scripts/respond.js"></script>
     {% block scripts %}{% endblock %}
-
+    <script>{{ script_txt }}</script>
 </body>
 </html>
